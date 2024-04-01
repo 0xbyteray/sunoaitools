@@ -15,10 +15,6 @@ const links = [
     href: "#Features",
   },
   {
-    label: "Pricing",
-    href: "#Pricing",
-  },
-  {
     label: "Wall of Love",
     href: "#WallOfLove",
   },
@@ -36,20 +32,20 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12">
           <Link
             href="/"
-            aria-label="Landing Page Boilerplate"
-            title="Landing Page Boilerplate"
+            aria-label="SunoAI All In One Tools"
+            title="SunoAI All In One Tools"
             className="flex items-center space-x-1 font-bold"
           >
             <Image
               alt={siteConfig.name}
-              src="/logo.svg"
-              className="w-8 h-8"
-              width={32}
-              height={32}
+              src={siteConfig.logo}
+              className="w-auto h-8"
+              width={24}
+              height={24}
             />
-            <span className="text-gray-950 dark:text-gray-300 hidden md:block">
+            {/* <span className="text-gray-950 dark:text-gray-300 hidden md:block">
               Landing Page Boilerplate
-            </span>
+            </span> */}
           </Link>
         </div>
 
@@ -69,12 +65,12 @@ const Header = () => {
         </ul>
 
         <div className="hidden md:flex items-center gap-x-6">
-          <HeaderLinks />
+          {/* <HeaderLinks /> */}
           <ThemedButton />
           <LangSwitcher />
         </div>
 
-        <div className="md:hidden">
+        <div className="md:show">
           <button
             aria-label="Open Menu"
             title="Open Menu"
@@ -90,20 +86,20 @@ const Header = () => {
                   <div>
                     <Link
                       href="/"
-                      aria-label="Landing Page Boilerplate"
-                      title="Landing Page Boilerplate"
+                      aria-label="SunoAI All In One Tools"
+                      title="SunoAI All In One Tools"
                       className="inline-flex items-center"
                     >
                       <Image
                         alt={siteConfig.name}
-                        src="/logo.svg"
-                        className="w-8 h-8"
-                        width={32}
-                        height={32}
+                        src={siteConfig.logo}
+                        className="w-auto h-8"
+                        width={24}
+                        height={24}
                       />
-                      <span className="ml-2 text-xl font-bold tracking-wide text-gray-950 dark:text-gray-300">
-                        Landing Page
-                      </span>
+                      {/* <span className="ml-2 text-xl font-bold tracking-wide text-gray-950 dark:text-gray-300">
+                        Home
+                      </span> */}
                     </Link>
                   </div>
                   <div>
@@ -137,7 +133,7 @@ const Header = () => {
                 <div className="pt-2">
                   <div className="py-2 font-bold">Links</div>
                   <div className="flex items-center gap-x-5 justify-between">
-                    <HeaderLinks />
+                    {/* <HeaderLinks /> */}
                     <div className="flex items-center justify-end gap-x-5">
                       <ThemedButton />
                       <LangSwitcher />

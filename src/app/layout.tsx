@@ -58,7 +58,7 @@ export default async function RootLayout({
           <main className="flex flex-col items-center py-6">{children}</main>
           <Footer />
           {/* <Analytics /> */}
-          <TailwindIndicator />
+          {/* <TailwindIndicator /> */}
         </ThemeProvider>
         {/* {process.env.NODE_ENV === "development" ? (
           <></>

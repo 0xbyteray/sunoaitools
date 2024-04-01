@@ -26,7 +26,7 @@ export type SiteConfig = {
   authors: AuthorsConfig[]
   creator: string
   openSourceURL?: string
-  ogImage: string
+  logo: string
   headerLinks: Link[]
   footerLinks: Link[],
   footerProducts: ProductLink[]
@@ -35,8 +35,6 @@ export type SiteConfig = {
   nextThemeColor?: string
   icons: {
     icon: string
-    shortcut?: string
-    apple?: string
   }
   openGraph: {
     type: string
