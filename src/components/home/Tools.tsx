@@ -38,7 +38,7 @@ const tools = [
 export const Tools = ({ locale }: { locale: any }) => {
 	return (
 		<section className="flex flex-col justify-center lg:max-w-7xl md:max-w-5xl w-[95%] mx-auto md:gap-14 py-6">
-			<div className={styles['tool-setion']}>
+			<div className={styles['tool-section']}>
 				<h2 className="text-center">
 					<RoughNotation type="highlight" show={true} color="#2563EB">
 						Download Youtube Videos Online
