@@ -10,18 +10,18 @@ import { CgClose } from "react-icons/cg";
 // import { ThemedButton } from "../ThemedButton";
 
 const links = [
-  // {
-  //   label: "Features",
-  //   href: "#Features",
-  // },
-  // {
-  //   label: "Wall of Love",
-  //   href: "#WallOfLove",
-  // },
-  // {
-  //   label: "FAQ",
-  //   href: "#FAQ",
-  // },
+  {
+    label: "Features",
+    href: "#Features",
+  },
+  {
+    label: "Wall of Love",
+    href: "#WallOfLove",
+  },
+  {
+    label: "FAQ",
+    href: "#FAQ",
+  },
 ];
 
 const Header = () => {
@@ -50,7 +50,7 @@ const Header = () => {
         </div>
 
         <ul className="hidden items-center gap-6 md:flex">
-          {links.map((link) => (
+          {/* {links.map((link) => (
             <li key={link.label}>
               <Link
                 href={link.href}
@@ -61,7 +61,7 @@ const Header = () => {
                 {link.label}
               </Link>
             </li>
-          ))}
+          ))} */}
         </ul>
 
         <div className="hidden md:flex items-center gap-x-6">
