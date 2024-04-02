@@ -2,7 +2,8 @@
 import { LineText } from "@/components/LineText";
 import DownloaderButton from "@/components/home/Downloader";
 import { motion } from "framer-motion";
-import { Tools } from "@/components/home/Tools";
+import { Tools } from "@/components/tools/Tools";
+import UploadForm from "@/components/uploadForm/UploadForm";
 
 const Hero = ({ locale, downloaderLocale }: { locale: any; downloaderLocale: any }) => {
   return (
@@ -31,9 +32,10 @@ const Hero = ({ locale, downloaderLocale }: { locale: any; downloaderLocale: any
           {locale.description}
         </p>
         <DownloaderButton locale={downloaderLocale}></DownloaderButton>
+        <UploadForm/>
       </section>
       <section>
-        <Tools locale={downloaderLocale} ></Tools>
+        {/* <Tools locale={downloaderLocale} ></Tools> */}
       </section>
       {/* </motion.div> */}
     </>
