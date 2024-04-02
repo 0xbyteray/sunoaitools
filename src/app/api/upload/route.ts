@@ -13,7 +13,6 @@ export async function POST(req: Request, res: Response) {
 		});
 	}
 
-	console.log("start...")
 	const completion = await openai.chat.completions.create({
 		messages: [{
 			"role": "user", "content": [{
@@ -21,7 +20,7 @@ export async function POST(req: Request, res: Response) {
 				"text": "What are in these images? Is there any difference between them?",
 			}, {
 				"type": "image_url", "image_url": {
-					"url": `data:image/jpeg;base64, ${base64_image}`
+					"url": base64_image.toString()
 				}
 			}]
 		}],
