@@ -12,19 +12,23 @@ export async function POST(req: Request, res: Response) {
 			status: 405
 		});
 	}
+	
+	console.log(base64_image.toString().substring(0, 200));
 
 	const completion = await openai.chat.completions.create({
+		model: "gpt-4-vision-preview",
 		messages: [{
-			"role": "user", "content": [{
+			"role": "user",
+			"content": [{
 				"type": "text",
-				"text": "What are in these images? Is there any difference between them?",
+				"text": "Write a song lyrics based on what's you see in the picture."
 			}, {
-				"type": "image_url", "image_url": {
+				"type": "image_url",
+				"image_url": {
 					"url": base64_image.toString()
 				}
 			}]
-		}],
-		model: "gpt-4-vision-preview",
+		}]
 	});
 
 	console.log(completion.choices[0].message.content);
