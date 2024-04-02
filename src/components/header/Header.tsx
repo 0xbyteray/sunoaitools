@@ -10,18 +10,18 @@ import { CgClose } from "react-icons/cg";
 // import { ThemedButton } from "../ThemedButton";
 
 const links = [
-  {
-    label: "Features",
-    href: "#Features",
-  },
-  {
-    label: "Wall of Love",
-    href: "#WallOfLove",
-  },
-  {
-    label: "FAQ",
-    href: "#FAQ",
-  },
+  // {
+  //   label: "Features",
+  //   href: "#Features",
+  // },
+  // {
+  //   label: "Wall of Love",
+  //   href: "#WallOfLove",
+  // },
+  // {
+  //   label: "FAQ",
+  //   href: "#FAQ",
+  // },
 ];
 
 const Header = () => {

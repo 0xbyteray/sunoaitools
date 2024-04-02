@@ -1,5 +1,6 @@
 "use client";
 import { useState, ChangeEvent, use } from 'react';
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 const UploadForm = () => {
@@ -46,12 +47,18 @@ const UploadForm = () => {
 	};
 
 	return (
-		<div>
-			<input type="file" accept="image/*" onChange={handleFileChange} />
+		<div className='mt-12 flex flex-row gap-10 justify-center'>
+			<input type="file" accept="image/*" onChange={handleFileChange} className="basis block w-full rounded-full border-0 px-4 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:text-slate-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" />
 			{base64Image && (
 				<div>
-					<img src={base64Image} alt="Uploaded" style={{ maxWidth: '200px', maxHeight: '200px' }} />
-					<button onClick={handleUpload}>上传</button>
+					<Image
+						src={base64Image}
+						alt="Uploaded"
+						width={200}
+						height={200}
+					/>
+					<button className="inline-flex justify-center rounded-2xl bg-blue-600 p-4 text-base font-semibold text-white hover:bg-blue-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 active:text-white/70 w-40"
+						type="button" onClick={handleUpload}>Try It!</button>
 				</div>
 			)}
 			{description && <p>描述: {description}</p>}

@@ -1,6 +1,6 @@
 // "use client";
 import { LineText } from "@/components/LineText";
-import DownloaderButton from "@/components/home/Downloader";
+import DownloaderButton from "@/components/downloader/Downloader";
 import { motion } from "framer-motion";
 import { Tools } from "@/components/tools/Tools";
 import UploadForm from "@/components/uploadForm/UploadForm";
